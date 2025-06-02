@@ -5,3 +5,9 @@ node_modules/
 # IDEs
 .vscode/
 .idea/
+
+# environment variables
+.env
+
+#build output
+dist/
