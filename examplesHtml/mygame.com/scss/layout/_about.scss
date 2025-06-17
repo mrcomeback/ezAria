@@ -1,0 +1,54 @@
+.about {
+  padding: 50px 35px 250px 35px;
+  position: relative;
+  @media screen and (min-width: 1200px) {
+    padding-top: 137px;
+    background-image: url('../../images/about-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__image-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    &--top {
+      @media screen and (min-width: 1200px) {
+        max-width: 510px;
+      }
+    }
+  }
+
+  &__title {
+    color: #fe34a0;
+    text-align: start;
+  }
+
+  &__text {
+    @include font(400, 20px, 24px);
+    color: var(--text-color);
+    text-align: justify;
+    margin-bottom: 55px;
+  }
+
+  &__button {
+    display: block;
+    animation: none;
+    transition: scale 0.3s ease;
+
+    &:hover {
+      scale: 120%;
+    }
+  }
+}

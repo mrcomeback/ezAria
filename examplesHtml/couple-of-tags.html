@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>
-    </main>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+<main>
+  <div>
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out!</p>
+    <div onclick="openChat()">Start Chat</div>
+  </div>
+
+  <div>
+    <img src="hero.jpg">
     <div>
-        <p>This is a simple HTML document with a couple of tags.</p>
-        <p>It includes a heading, a paragraph, and links to a stylesheet and a favicon.</p>
-        <a href="https://www.example.com">Visit Example</a>
-        <img src="https://img.freepik.com/premium-vector/cute-panda-holding-bamboo-cartoon-vector-illustration-template_665072-2317.jpg?semt=ais_items_boosted&w=740" alt="An example image" />
+      <h1>Welcome to ZenLand</h1>
+      <p>Your peaceful puzzle sanctuary</p>
     </div>
+  </div>
+
+  <div>
+    <span>Privacy:</span>
+    <a href="/privacy">Privacy Policy</a>
+    <a href="/terms">Terms & Conditions</a>
+  </div>
+
+  <section>
+    <h3>Available Games</h3>
+    <ul>
+      <li><span>Puzzle Adventure</span></li>
+      <li><span>Memory Zen</span></li>
+      <li><span>Color Balance</span></li>
+    </ul>
+  </section>
+
+  <div>
+    <h3>Sign up to our newsletter</h3>
+    <form action="/subscribe" method="POST">
+      <input type="text" name="email" placeholder="Your email">
+      <input type="submit" value="Subscribe">
+    </form>
+  </div>
+
+  <div onclick="scrollToTop()" style="cursor: pointer; padding: 10px; background: lightgray;">
+    Back to Top
+  </div>
+
+  <footer>
     <div>
-        <p>Here is another paragraph with some <strong>bold text</strong> and <em>italic text</em>.</p>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-        </ul>
-        <ol>
-            <li>First item</li>
-            <li>Second item</li>
-            <li>Third item</li>
-        </ol>
+      <p>All rights reserved ZenLand © 2025</p>
+      <button>Submit Feedback</button>
     </div>
-    <div>
-        <div>Title</div>
-        <button>Action</button>
-    </div>
-  </body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/support">Support</a>
+    </nav>
+  </footer>
+</main>
+
+
+</body>
+
 </html>

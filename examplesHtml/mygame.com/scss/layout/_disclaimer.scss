@@ -1,0 +1,39 @@
+.disclaimer {
+  &__wrapper {
+    max-width: 727px;
+    // margin: 0 auto;
+    z-index: 1;
+    position: relative;
+    flex: 1
+  }
+
+  &__title {
+    @include font(900, 32px, 48px);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FE34A0;
+    margin-bottom: 33px;
+    @media screen and (min-width: 1200px) {
+      text-align: end;
+    }
+  }
+
+  &__text {
+    @include font(400, 20px, 24px);
+    text-align: justify;
+    text-transform: uppercase;
+    color: var(--text-color);
+    @media screen and (min-width: 1200px) {
+      @include font(400, 24px, 28px);
+    }
+  }
+}
+
+.disclaimer--image {
+  margin: 0 auto;
+  max-width: 266px;
+  margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}

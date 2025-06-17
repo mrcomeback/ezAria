@@ -1,0 +1,20 @@
+.gallery {
+  padding-block: 50px;
+
+  &__item {
+    margin: 0 22px;
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 303px;
+  }
+
+  &__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    margin-top: 70px;
+  }
+}

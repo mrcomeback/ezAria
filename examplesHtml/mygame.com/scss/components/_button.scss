@@ -1,0 +1,22 @@
+.button {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  // height: 35px;
+
+  // border-radius: 50%;
+  // background-color: #38fe34;
+  border: none;
+  background-color: transparent;
+  transition: scale 0.3s ease;
+  padding: 0;
+  // box-shadow: 0px 4px 0px 0px #64069d;
+
+  &:hover {
+    scale: 120%;
+  }
+}
+
+.reviews-button {
+  background-color: white;
+}

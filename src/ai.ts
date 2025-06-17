@@ -1,22 +1,23 @@
 import { OpenAI } from 'openai';
 import path from 'path';
 import fs from 'fs';
+import { htmlParseAIResult } from './interfaces/htmlParseAIResult';
 
-const openai = new OpenAI({ apiKey:  process.env.OPENAI_API_KEY });
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-export async function generateAriaAttribute(text: string): Promise<string> {
+export async function generateAriaAttribute(html: string): Promise<string> {
     const response = await openai.chat.completions.create({
         model: 'gpt-4.1',
         messages: [
             {
-              role: 'system',
-              content: 'You are an accessibility assistant. Respond with only a short string suitable for an aria-label attribute. No explanations, no formatting, no markdown.',
+                role: 'system',
+                content: 'You are an accessibility assistant. Respond with only a short string suitable for an aria-label attribute. No explanations, no formatting, no markdown.',
             },
             {
-              role: 'user',
-              content: `Generate a concise aria-label for the following HTML content:\n"${text}"`,
+                role: 'user',
+                content: `Generate a concise aria-label and role for the following HTML content:\n${html}.For each tag have been processed also need to set an data atribute data-ezaria-handled="true"`,
             },
-          ],
+        ],
         temperature: 0.2,
     });
     return response.choices[0].message.content?.trim() || 'element';
@@ -64,11 +65,75 @@ export async function describeImage(src: string): Promise<string> {
             ],
             max_tokens: 100,
         });
-        console.log(response);
-        console.log(response.choices[0]);
         return response.choices[0].message.content?.trim() || 'Image description';
     } catch (err) {
         console.error('❌ Error describing image:', err);
         return 'Image';
     }
+}
+
+// export async function describeEmptyElement(tag: string, styles: string, classes: string): Promise<string> {
+//     const response = await openai.chat.completions.create({
+//         model: 'gpt-4.1',
+//         messages: [
+//             {
+//                 role: 'system',
+//                 content: 'You are an accessibility assistant. Respond with only a short string suitable for an aria-label attribute. No explanations, no formatting, no markdown.',
+//             },
+//             {
+//                 role: 'user',
+//                 content: `Generate a concise aria-label for an empty heml element ${tag} with next styles:\n ${styles} and next classes:\n ${classes}".If it is system or rechnical element, set aria-label to "system UI element".
+//                 If it is element of design, describe it in a few words.`,
+//             },
+//         ],
+//         temperature: 0.2,
+//     });
+//     return response.choices[0].message.content?.trim() || 'empty element';
+// }
+
+export async function describeHtml(html: string): Promise<htmlParseAIResult[]> {
+    const response = await openai.chat.completions.create({
+        model: 'gpt-4.1',
+        messages: [
+            {
+                role: 'system',
+                content: 'You are an accessibility assistant. Respond with a JSON array of objects, each containing "ezariaId", "role", and "ariaLabel" attributes. No explanations, no formatting, no markdown.',
+            },
+            {
+                role: 'user',
+                content: `Here is an HTML block. Some elements are already handled and marked with data-ezaria-handled="true".
+
+                Please:
+                1. Skip any element that has data-ezaria-handled="true"
+                2. For the rest, Generate a concise 'aria-label' and 'role' attributes.
+                3. Identify elements using their 'data-ezaria-id' attribute
+
+                Return JSON like:
+                [
+                {
+                    "ezariaId": "ez-005",
+                    "role": "region",
+                    "ariaLabel": "Disclaimer section"
+                },
+                ...
+                ]
+                HTML block:
+                ${html}
+                "`,
+            },
+        ],
+        temperature: 0.2,
+    });
+    const raw = response.choices[0].message.content?.trim();
+
+    if (!raw) return [];
+
+    try {
+        const parsed: htmlParseAIResult[] = JSON.parse(raw);
+        return parsed;
+    } catch (err) {
+        console.error('❌ Failed to parse AI response as JSON:', raw);
+        return [];
+    }
+
 }

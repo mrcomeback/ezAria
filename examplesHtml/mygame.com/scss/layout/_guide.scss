@@ -1,0 +1,71 @@
+.guide {
+  background-color: #00d7f3;
+  margin-top: -1px;
+
+  padding: 50px 35px 75px 35px;
+  position: relative;
+
+  &__main-tilte {
+    margin-bottom: 70px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 90px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    max-width: 1500px;
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 2;
+    @media screen and (min-width: 768px) {
+      gap: 70px;
+    }
+  }
+
+  &__item {
+    width: 432px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__number {
+    @include font(400, 96px, 96px);
+    text-align: center;
+    color: #fe34a0;
+    min-width: 60px;
+    max-width: 60px;
+    @media screen and (min-width: 768px) {
+      @include font(400, 128px, 128px);
+      min-width: 81px;
+      max-width: 81px;
+    }
+  }
+
+  &__title {
+    @include font(900, 20px, 20px);
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    @include font(400, 20px, 28px);
+    color: black;
+  }
+}
+
+.eggplant-image--2 {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    bottom: -94px;
+    right: 0;
+    width: 264px;
+  }
+}

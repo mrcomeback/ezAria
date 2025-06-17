@@ -1,0 +1,32 @@
+.main__terms {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 35px;
+  padding-bottom: 44px;
+  padding-top: 114px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 160px;
+  }
+}
+
+.policy__title {
+  @include font(900, 48px, 50px);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 54px;
+  color: #fe34a0;
+}
+
+.text {
+  @include font(400, 18px, 27px);
+  text-align: justify;
+  color: var(--secondary-color);
+}
+.text-bold {
+  margin-block: 24px;
+  @include font(700, 18px, 27px);
+}
+
+// .terms-header-button {
+//   background-color: white;
+// }
