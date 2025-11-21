@@ -1,7 +1,16 @@
 {
   "name": "ezaria",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/module.js",
+  "types": "dist/module.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/module.js",
+      "import": "./dist/module.js",
+      "types": "./dist/module.d.ts"
+    },
+    "./cli": "./dist/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -10,10 +19,19 @@
   "bin": {
     "ezaria": "./dist/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "accessibility",
+    "aria",
+    "a11y",
+    "automation"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "CLI and library for automatically enriching HTML with ARIA roles and labels.",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "dependencies": {
     "cheerio": "^1.0.0",
     "dotenv": "^16.5.0",

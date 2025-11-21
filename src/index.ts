@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config(); 
 
 import fs from 'fs';
-import { addAriaAttributesForAll } from './parser';
+import { addAriaAttributesForAll } from './module';
 const inputPath: string = process.argv[2];
 const outputPath: string = "result/output.html";
 
