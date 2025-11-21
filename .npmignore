@@ -1,0 +1,6 @@
+# Ignore everything by default; rely on package.json "files" list (dist + README)
+*
+
+# But keep these docs if referenced during packing
+!README.md
+!LICENSE
