@@ -15,7 +15,7 @@ export async function generateAriaAttribute(html: string): Promise<string> {
             },
             {
                 role: 'user',
-                content: `Generate a concise aria-label and role for the following HTML content:\n${html}.For each tag have been processed also need to set an data atribute data-ezaria-handled="true"`,
+                content: `Generate a concise aria-label and role for the following HTML content:\n${html}.`,
             },
         ],
         temperature: 0.2,
@@ -58,7 +58,7 @@ export async function describeImage(src: string): Promise<string> {
                 {
                     role: 'user',
                     content: [
-                        { type: 'text', text: 'Describe this image briefly for screen readers.' },
+                        { type: 'text', text: 'Describe this image briefly for screen readers.Add data-ezaria-handled="true" if success.' },
                         imageInput,
                     ],
                 },
@@ -71,25 +71,6 @@ export async function describeImage(src: string): Promise<string> {
         return 'Image';
     }
 }
-
-// export async function describeEmptyElement(tag: string, styles: string, classes: string): Promise<string> {
-//     const response = await openai.chat.completions.create({
-//         model: 'gpt-4.1',
-//         messages: [
-//             {
-//                 role: 'system',
-//                 content: 'You are an accessibility assistant. Respond with only a short string suitable for an aria-label attribute. No explanations, no formatting, no markdown.',
-//             },
-//             {
-//                 role: 'user',
-//                 content: `Generate a concise aria-label for an empty heml element ${tag} with next styles:\n ${styles} and next classes:\n ${classes}".If it is system or rechnical element, set aria-label to "system UI element".
-//                 If it is element of design, describe it in a few words.`,
-//             },
-//         ],
-//         temperature: 0.2,
-//     });
-//     return response.choices[0].message.content?.trim() || 'empty element';
-// }
 
 export async function describeHtml(html: string): Promise<htmlParseAIResult[]> {
     const response = await openai.chat.completions.create({

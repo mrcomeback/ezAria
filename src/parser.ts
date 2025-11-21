@@ -27,7 +27,7 @@ export async function addAriaAttributes(html: string): Promise<string> {
 }
 
 export async function addAriaAttributesForAll(html: string): Promise<string> {
-  const $ = cheerio.load(html);
+  const $: CheerioAPI = cheerio.load(html);
   assignEzariaIdsToAllElements($);
 
   const imgElements = $('img');
@@ -57,6 +57,7 @@ export async function addAriaAttributesForAll(html: string): Promise<string> {
         if (content) {
           const label = await generateAriaAttribute(content);
           $el.attr('aria-label', label);
+          $el.attr('data-ezaria-handled', 'true');
         }
       }
     }

@@ -1,249 +1,303 @@
-<!DOCTYPE html><html lang="en" role="document" aria-label="Zen Match website"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zen Match</title>
-    <link rel="icon" href="./examplesHtml/mygame.com/images/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  </head>
+<!DOCTYPE html>
+<html lang="en" role="document" aria-label="Zen Match game website">
 
-  <body role="main" aria-label="Main content">
-    <header class="header" role="banner" aria-label="Site header">
-      <div class="header__background" role="presentation" aria-label="Header background"></div>
-      <nav class="navigation container" role="navigation" aria-label="Main site navigation">
-        <ul class="navigation__list" role="list" aria-label="Navigation links">
-          <li class="navigation__item" role="listitem" aria-label="Home navigation item">
-            <a href="#home" class="navigation__link" aria-label="Home page link">Home</a>
-          </li>
-          <li class="navigation__item" role="listitem" aria-label="Advantages navigation item">
-            <a href="#advantages" class="navigation__link" aria-label="Advantages section">Advantages</a>
-          </li>
-          <li class="navigation__item" role="listitem" aria-label="User reviews navigation item">
-            <a href="#reviews" class="navigation__link" aria-label="User reviews section">User Reviews</a>
-          </li>
-          <li class="navigation__item" role="listitem" aria-label="About Us navigation item">
-            <a href="#about" class="navigation__link" aria-label="About Us section">About Us</a>
-          </li>
-          <li class="navigation__item" role="listitem" aria-label="Gallery navigation item">
-            <a href="#gallery" class="navigation__link" aria-label="Gallery, processed for accessibility">Gallery</a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Match</title>
+  <link rel="icon" href="./examplesHtml/mygame.com/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
 
-        <div class="header__button-wrapper" role="group" aria-label="Header menu button container">
-          <button type="button" class="header__icon-button" data-menu-button="" role="button" aria-label="Open or close navigation menu">
-            <svg class="header__icon header__icon--menu" role="img" aria-label="Menu icon">
-              <use href="./examplesHtml/mygame.com/images/sprite.svg#icon-menu" role="img" aria-label="Menu icon graphic"></use>
-            </svg>
-            <svg class="header__icon header__icon--close" role="img" aria-label="Close icon">
-              <use href="./examplesHtml/mygame.com/images/sprite.svg#icon-close" role="img" aria-label="Close icon graphic"></use>
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </header>
+<body role="main" aria-label="Main content">
+  <header class="header" role="banner" aria-label="Site header">
+    <div class="header__background" role="presentation" aria-label="Header background"></div>
+    <nav class="navigation container" role="navigation" aria-label="Main site navigation">
+      <ul class="navigation__list" role="list" aria-label="Navigation links list">
+        <li class="navigation__item" role="listitem" aria-label="Home navigation item">
+          <a href="#home" class="navigation__link" aria-label="Home page">Home</a>
+        </li>
+        <li class="navigation__item" role="listitem" aria-label="Advantages navigation item">
+          <a href="#advantages" class="navigation__link" aria-label="Advantages section">Advantages</a>
+        </li>
+        <li class="navigation__item" role="listitem" aria-label="User reviews navigation item">
+          <a href="#reviews" class="navigation__link" aria-label="User reviews section">User Reviews</a>
+        </li>
+        <li class="navigation__item" role="listitem" aria-label="About Us navigation item">
+          <a href="#about" class="navigation__link" aria-label="About Us section">About Us</a>
+        </li>
+        <li class="navigation__item" role="listitem" aria-label="Gallery navigation item">
+          <a href="#gallery" class="navigation__link" aria-label="Image gallery">Gallery</a>
+        </li>
+      </ul>
 
-    <main class="main" role="main" aria-label="Main sections">
-      <section class="home" id="home" aria-label="Zen Match game description">
-        <img class="home__image-1" src="./examplesHtml/mygame.com/images/hero.png" alt="" aria-label="A colorful assortment of cartoon-like toys and objects, including teddy bears, rubber ducks, beach balls, apples, and rabbits, is scattered across a white background. The items are bright and playful, creating a cheerful, whimsical scene.">
-        <div class="home__container-top">
-          <h1 class="home__title" aria-label="Zen Match game title">
-            <span class="text-stroke">Zen Match</span>
-            <span class="text-content">Zen Match</span>
-          </h1>
-          <p class="home__text" aria-label="Align your mind with Zen Match, a serene path to puzzle perfection">
-            Align your mind with Zen Match - <br>
-            a serene path to puzzle perfection.
+      <div class="header__button-wrapper" role="group" aria-label="Header button group">
+        <button type="button" class="header__icon-button" data-menu-button="" role="button"
+          aria-label="Open or close menu">
+          <svg class="header__icon header__icon--menu" role="img" aria-label="Menu icon">
+            <use href="./examplesHtml/mygame.com/images/sprite.svg#icon-menu" role="img" aria-label="Menu icon graphic">
+            </use>
+          </svg>
+          <svg class="header__icon header__icon--close" role="img" aria-label="Close icon">
+            <use href="./examplesHtml/mygame.com/images/sprite.svg#icon-close" role="img"
+              aria-label="Close icon graphic"></use>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main" role="main" aria-label="Zen Match main content">
+    <section class="home" id="home" aria-label="Zen Match game description">
+      <img class="home__image-1" src="./examplesHtml/mygame.com/images/hero.png" alt=""
+        aria-label="A colorful pile of cartoonish toys, including ducks, bears, rabbits, beach balls, and apples, arranged against a plain black background.">
+      <div class="home__container-top">
+        <h1 class="home__title" aria-label="Zen Match game information">
+          <span class="text-stroke">Zen Match</span>
+          <span class="text-content">Zen Match</span>
+        </h1>
+        <p class="home__text" aria-label="Align your mind with Zen Match, a serene path to puzzle perfection">
+          Align your mind with Zen Match - <br>
+          a serene path to puzzle perfection.
+        </p>
+        <a class="home__google-button_link" href="https://play.google.com/store/apps/details?id=com.zen.match3d"
+          target="_blank">
+          <img class="home__google-button_image" src="./examplesHtml/mygame.com/images/google-button.png" alt=""
+            aria-label="A button with a gradient background from pink to purple, featuring the Google Play logo and text that reads &quot;GET IT ON Google Play.&quot;">
+        </a>
+      </div>
+    </section>
+
+    <section class="advantages" id="advantages"
+      aria-label="List of advantages: meditative puzzle-solving, complex patterns, soothing visuals, stress reduction, intuitive gameplay, cognitive skill boost">
+      <img class="advantages__image-1" src="./examplesHtml/mygame.com/images/advantages-1.png" alt=""
+        aria-label="A simple white cloud shape against a transparent background.">
+      <img class="advantages__image-2" src="./examplesHtml/mygame.com/images/advantages-2.png" alt=""
+        aria-label="A smartphone screen displays an &quot;Easter Challenge&quot; game interface. At the top, there's an Easter-themed banner featuring a basket, eggs, and a rabbit. Below, a progress section shows &quot;32/50&quot; completed. There is a grid of lock icons representing levels not yet unlocked. The text mentions beating 16 Easter puzzle levels to earn an avatar.">
+
+      <h2 class="section--title advantages__main-title" aria-label="Advantages list">Advantages</h2>
+
+      <ul class="advantages__list" role="list" aria-label="Advantages list">
+        <li class="advantages__item" role="listitem" aria-label="Meditative puzzle-solving advantage">
+          <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt=""
+            aria-label="A cute, cartoon-style duck figure with big round eyes, an orange beak, and cheeks. The body is simple and rounded, resembling a toy or rubber duck.">
+          <p class="advantages__text" aria-label="Meditative puzzle-solving experience">Meditative puzzle-solving
+            experience</p>
+        </li>
+        <li class="advantages__item" role="listitem" aria-label="Complex patterns advantage">
+          <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt=""
+            aria-label="A cute, round, rubber duck with large eyes and a small orange beak is depicted. Its expression is friendly, with orange blush marks on its cheeks. The duck's body is primarily cream-colored.">
+          <p class="advantages__text" aria-label="Complex pattern options, processed tags">
+            Variety of complex patterns to organize
           </p>
-          <a class="home__google-button_link" href="https://play.google.com/store/apps/details?id=com.zen.match3d" target="_blank" role="link" aria-label="Get Zen Match on Google Play">
-            <img class="home__google-button_image" src="./examplesHtml/mygame.com/images/google-button.png" alt="" aria-label="A button with a gradient background that says &quot;Get it on Google Play.&quot; It features the Google Play logo on the left side.">
-          </a>
-        </div>
-      </section>
+        </li>
+        <li class="advantages__item" role="listitem" aria-label="Soothing visuals advantage">
+          <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt=""
+            aria-label="A cute, stylized rubber duck with a round body, orange beak, and rosy cheeks. Its eyes are large and round, giving it a playful and friendly appearance.">
+          <p class="advantages__text" aria-label="Visually soothing interface and animations">
+            Visually soothing interface and animations
+          </p>
+        </li>
+        <li class="advantages__item" role="listitem" aria-label="Stress reduction advantage">
+          <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt=""
+            aria-label="A cute, cartoonish duck figurine with a round body, big eyes, and an orange beak. The duck has a simple, minimalist design with smooth features and a soft color palette.">
+          <p class="advantages__text" aria-label="Reduce stress through engaging tasks">
+            Designed to help reduce stress through engaging tasks
+          </p>
+        </li>
+        <li class="advantages__item" role="listitem" aria-label="Intuitive gameplay advantage">
+          <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt=""
+            aria-label="A cute, cartoonish duck with a round body, big eyes, and orange beak and feet. Its cheeks are rosy, giving it an adorable expression.">
+          <p class="advantages__text" aria-label="Intuitive gameplay for all ages">
+            Intuitive gameplay suited for all ages
+          </p>
+        </li>
+        <li class="advantages__item" role="listitem" aria-label="Cognitive skill boost advantage">
+          <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt=""
+            aria-label="A cute, round rubber duck with an orange beak and small, dark eyes. The duck has a soft, pastel color scheme and appears cartoonish.">
+          <p class="advantages__text" aria-label="Boost cognitive skills while unwinding">
+            Boost cognitive skills while unwinding
+          </p>
+        </li>
+      </ul>
 
-      <section class="advantages" id="advantages" aria-label="List of advantages: meditative puzzle-solving, variety of patterns, soothing visuals, stress reduction, intuitive gameplay, cognitive skill boost">
-        <img class="advantages__image-1" src="./examplesHtml/mygame.com/images/advantages-1.png" alt="" aria-label="A digital illustration of a simple, fluffy white cloud with rounded edges against a plain background.">
-        <img class="advantages__image-2" src="./examplesHtml/mygame.com/images/advantages-2.png" alt="" aria-label="The image shows a smartphone screen displaying an Easter-themed game. The top section features a bunny with Easter eggs and flowers. Below is a green banner reading &quot;Easter Challenge.&quot; A progress bar shows 32 out of 50 completed levels. There are icons for puzzles and a timer. In the middle, a grid with locked padlocks is visible, likely representing levels to unlock. At the bottom, there's a prompt about completing 16 puzzle levels for an Easter avatar.">
+      <div class="gallery__button-container advantages__button-container" role="group"
+        aria-label="Advantages navigation buttons">
+        <button class="button advantages__button--left" role="button" aria-label="Previous advantage">
+          <img src="./examplesHtml/mygame.com/images/arrow-left.png" alt="" aria-label="Left arrow" role="img">
+        </button>
+        <button class="button advantages__button--right" role="button" aria-label="Next advantage">
+          <img src="./examplesHtml/mygame.com/images/arrow-right.png" alt="" aria-label="Right arrow" role="img">
+        </button>
+      </div>
 
-        <h2 class="section--title advantages__main-title" aria-label="Advantages section">Advantages</h2>
+      <div class="advantages__button-wrapper" role="group" aria-label="Google Play button group">
+        <a class="home__google-button_link" href="https://play.google.com/store/apps/details?id=com.zen.match3d"
+          target="_blank" role="link" aria-label="Download Zen Match on Google Play">
+          <img class="home__google-button_image" src="./examplesHtml/mygame.com/images/google-button.png" alt=""
+            aria-label="Google Play download button" role="img">
+        </a>
+      </div>
+    </section>
 
-        <ul class="advantages__list" role="list" aria-label="Advantages list">
-          <li class="advantages__item" role="listitem" aria-label="Meditative puzzle-solving advantage">
-            <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt="" aria-label="A cute, cartoon-style rubber duck with a white body, orange beak, and large round eyes.">
-            <p class="advantages__text" aria-label="Meditative puzzle-solving experience">Meditative puzzle-solving experience</p>
-          </li>
-          <li class="advantages__item" role="listitem" aria-label="Variety of complex patterns advantage">
-            <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt="" aria-label="A cute, cartoon-style rubber duck with an orange beak and cheeks, and large round eyes. The duck has a smooth and glossy appearance.">
-            <p class="advantages__text" aria-label="Complex patterns organization status">
-              Variety of complex patterns to organize
+    <section class="reviews" id="reviews" aria-label="User reviews section">
+      <img class="reviews__image-1" src="./examplesHtml/mygame.com/images/advantages-1.png" alt=""
+        aria-label="A simplified, stylized white cloud shape with rounded edges against a transparent background.">
+
+      <h2 class="reviews__title--main section--title" aria-label="User reviews">User reviews</h2>
+      <div class="container">
+        <ul class="reviews__list" role="list" aria-label="User reviews list">
+          <li data-aos="flip-left" class="reviews__item" role="listitem" aria-label="User review by CalmCollector">
+            <img class="reviews__icon" src="./examplesHtml/mygame.com/images/reviews/icon-1.png" alt=""
+              aria-label="A stylized 3D illustration of a person with green hair and glasses. They are wearing a green jacket with pink accents and a white shirt. The background is a light blue color. The style is cartoonish and colorful.">
+            <h3 class="reviews__title" aria-label="Calm Collector processed tag">CalmCollector</h3>
+            <p class="reviews__text" aria-label="Relaxation ritual message">
+              It's not just a game, it's a relaxation ritual.
             </p>
           </li>
-          <li class="advantages__item" role="listitem" aria-label="Visually soothing interface advantage">
-            <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt="" aria-label="A cute, cartoon-style duck with a round body, big eyes, orange beak, and rosy cheeks.">
-            <p class="advantages__text" aria-label="Visually soothing interface and animations">
-              Visually soothing interface and animations
-            </p>
-          </li>
-          <li class="advantages__item" role="listitem" aria-label="Stress reduction advantage">
-            <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt="" aria-label="A cute, cartoon-style rubber duck with a round body, large eyes, and an orange beak. The duck has a soft, pale color with orange cheeks and a smooth, simple design.">
-            <p class="advantages__text" aria-label="Reduce stress through engaging tasks">
-              Designed to help reduce stress through engaging tasks
-            </p>
-          </li>
-          <li class="advantages__item" role="listitem" aria-label="Intuitive gameplay advantage">
-            <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt="" aria-label="A cute, small, cartoonish duck with a round body, big eyes, an orange beak, and rosy cheeks. The duck is simplified and has a soft, smooth appearance.">
-            <p class="advantages__text" aria-label="Intuitive gameplay for all ages">
-              Intuitive gameplay suited for all ages
-            </p>
-          </li>
-          <li class="advantages__item" role="listitem" aria-label="Cognitive skill boost advantage">
-            <img class="advantages__icon" src="./examplesHtml/mygame.com/images/polygon.png" alt="" aria-label="A cute, cartoon-style rubber duck with a round body, big eyes, and orange beak. Its cheeks are slightly rosy, giving it an adorable appearance.">
-            <p class="advantages__text" aria-label="Boost cognitive skills while unwinding">
-              Boost cognitive skills while unwinding
-            </p>
-          </li>
-        </ul>
-
-        <div class="gallery__button-container advantages__button-container" role="group" aria-label="Advantages carousel button container">
-          <button class="button advantages__button--left" role="button" aria-label="Scroll advantages left">
-            <img src="./examplesHtml/mygame.com/images/arrow-left.png" alt="" aria-label="A 3D blue arrow pointing left.">
-          </button>
-          <button class="button advantages__button--right" role="button" aria-label="Scroll advantages right">
-            <img src="./examplesHtml/mygame.com/images/arrow-right.png" alt="" aria-label="A blue arrow pointing to the right.">
-          </button>
-        </div>
-
-        <div class="advantages__button-wrapper" role="group" aria-label="Google Play button wrapper">
-          <a class="home__google-button_link" href="https://play.google.com/store/apps/details?id=com.zen.match3d" target="_blank" role="link" aria-label="Download Zen Match on Google Play">
-            <img class="home__google-button_image" src="./examplesHtml/mygame.com/images/google-button.png" alt="" aria-label="This is a button with a gradient background that transitions from pink to purple, featuring the Google Play logo and the text &quot;GET IT ON Google Play.&quot;">
-          </a>
-        </div>
-      </section>
-
-      <section class="reviews" id="reviews" aria-label="User reviews section">
-        <img class="reviews__image-1" src="./examplesHtml/mygame.com/images/advantages-1.png" alt="" aria-label="A simple, stylized illustration of a white cloud with a smooth, rounded shape on a transparent background.">
-
-        <h2 class="reviews__title--main section--title" aria-label="User reviews section">User reviews</h2>
-        <div class="container">
-          <ul class="reviews__list" role="list" aria-label="User reviews list">
-            <li data-aos="flip-left" class="reviews__item" role="listitem" aria-label="Review by CalmCollector">
-              <img class="reviews__icon" src="./examplesHtml/mygame.com/images/reviews/icon-1.png" alt="" aria-label="A 3D illustration of a person with teal hair and glasses, wearing a teal and pink jacket over a white shirt. The background is light blue.">
-              <h3 class="reviews__title" aria-label="Processed tag: CalmCollector">CalmCollector</h3>
-              <p class="reviews__text" aria-label="Relaxation ritual message">
-                It's not just a game, it's a relaxation ritual.
-              </p>
-            </li>
-            <li data-aos="flip-left" class="reviews__item" role="listitem" aria-label="Review by PuzzlePeace">
-              <img class="reviews__icon" src="./examplesHtml/mygame.com/images/reviews/icon-2.png" alt="" aria-label="This image shows a 3D-rendered cartoon character with brown hair, round eyes, and a smile. The character is wearing a bright green shirt against a blue background.">
-              <h3 class="reviews__title" aria-label="Puzzle Peace game content">PuzzlePeace</h3>
-              <p class="reviews__text" aria-label="Description: Relaxation message  
+          <li data-aos="flip-left" class="reviews__item" role="listitem" aria-label="User review by PuzzlePeace">
+            <img class="reviews__icon" src="./examplesHtml/mygame.com/images/reviews/icon-2.png" alt=""
+              aria-label="This image is an illustration of a 3D cartoon character with brown hair, a smiling face, and wearing a green shirt. The background is blue.">
+            <h3 class="reviews__title" aria-label="Puzzle Peace game content">PuzzlePeace</h3>
+            <p class="reviews__text" aria-label="Description: Relaxation message  
 Role: status">
-                Perfect for winding down after a long day.
-              </p>
-            </li>
-            <li data-aos="flip-left" class="reviews__item" role="listitem" aria-label="Review by MindfulGamer">
-              <img class="reviews__icon" src="./examplesHtml/mygame.com/images/reviews/icon-3.png" alt="" aria-label="This image is an illustration of a 3D cartoon character with brown hair, wearing a red shirt and a matching headband, set against a blue background.">
-              <h3 class="reviews__title" aria-label="Mindful Gamer site">MindfulGamer</h3>
-              <p class="reviews__text" aria-label="User review: balances challenge with relaxation">
-                I love how it balances challenge with relaxation.
-              </p>
-            </li>
-            <li data-aos="flip-left" class="reviews__item" role="listitem" aria-label="Review by SereneSolver">
-              <img class="reviews__icon" src="./examplesHtml/mygame.com/images/reviews/icon-4.png" alt="" aria-label="This image is an illustration of a stylized, cartoon-like person with long black hair and a blue hoodie. The background is light blue.">
-              <h3 class="reviews__title" aria-label="SereneSolver processed with accessibility attribute">SereneSolver</h3>
-              <p class="reviews__text" aria-label="aria-label=&quot;Best puzzle game for a quiet evening&quot;">
-                The best puzzle game for a quiet evening.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="about" id="about" aria-label="aria-label=&quot;About us section describing Zen Match as a mindfulness game&quot;">
-        <img class="about__image-1" src="./examplesHtml/mygame.com/images/about-1.png" alt="" aria-label="A collection of colorful, cartoon-styled objects is piled up. Items include a yellow rubber duck, various geometric shapes, and other playful artifacts. A fluffy white cloud is superimposed on the left side of the image, partially obscuring the objects behind it. The background is a gradient of blue tones.">
-
-        <div class="about__wrapper container" role="group" aria-label="About section content wrapper">
-          <div class="about__wrapper--top" role="group" aria-label="About section top content">
-            <h2 class="about__title section--title" aria-label="About us section">About us</h2>
-            <p class="about__text" aria-label="aria-label=&quot;Zen Match mindfulness gaming movement&quot;">
-              Zen Match is not just a game, it's a movement towards mindfulness
-              through gaming. Each puzzle is designed not only to challenge but
-              also to impart a sense of peace and satisfaction through its
-              completion.
+              Perfect for winding down after a long day.
             </p>
-            <a class="home__google-button_link about__button" href="https://play.google.com/store/apps/details?id=com.zen.match3d" target="_blank" role="link" aria-label="Get Zen Match on Google Play">
-              <img src="./examplesHtml/mygame.com/images/google-button.png" alt="" aria-label="A button with a gradient background of pink and purple, displaying the Google Play logo and the text &quot;GET IT ON Google Play.&quot;">
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="gallery" id="gallery" role="region" aria-label="Gallery section">
-        <ul data-aos="fade-down" class="gallery__list" role="list" aria-label="Gallery images">
-          <li class="gallery__item" role="listitem" aria-label="Gallery item 1">
-            <img class="gallery__image" src="./examplesHtml/mygame.com/images/gallery/gallery-1.png" alt="" aria-label="A colorful game interface featuring rubber ducks wearing Santa hats, lifebuoys, and toothbrushes floating around. There are counters for ducks and lifebuoys, and a timer at the top. The background is bright, and the words &quot;Match Items!&quot; are displayed at the bottom.">
           </li>
-          <li class="gallery__item" role="listitem" aria-label="Gallery item 2">
-            <img class="gallery__image" src="./examplesHtml/mygame.com/images/gallery/gallery-2.png" alt="" aria-label="A puzzle game interface shows various pink objects, including a pig face under a magnifying glass. The level is 9, with a timer at 5:30 and 14 stars earned. The bottom section highlights colorful buttons and text saying &quot;Solve Puzzles!&quot;">
+          <li data-aos="flip-left" class="reviews__item" role="listitem" aria-label="User review by MindfulGamer">
+            <img class="reviews__icon" src="./examplesHtml/mygame.com/images/reviews/icon-3.png" alt=""
+              aria-label="This image is a 3D cartoon-style illustration of a person with long brown hair and a red headband, wearing a red top. The background is blue.">
+            <h3 class="reviews__title" aria-label="Mindful Gamer site">MindfulGamer</h3>
+            <p class="reviews__text" aria-label="User review: balances challenge with relaxation">
+              I love how it balances challenge with relaxation.
+            </p>
           </li>
-          <li class="gallery__item" role="listitem" aria-label="Gallery item 3">
-            <img class="gallery__image" src="./examplesHtml/mygame.com/images/gallery/gallery-3.png" alt="" aria-label="The image shows a split design of a room, with one side in grayscale and the other in color. The grayscale side appears unadorned, while the colored side is vibrant and has decorations like books, plants, and furniture. A yellow arrow points from the grayscale to the colorful side. The bottom text says &quot;Decorate Rooms!&quot; with clouds and a vibrant background.">
-          </li>
-          <li class="gallery__item" role="listitem" aria-label="Gallery item 4">
-            <img class="gallery__image" src="./examplesHtml/mygame.com/images/gallery/gallery-4.png" alt="" aria-label="The image shows a game screen with a central crown surrounded by coins and smaller crowns. A hand with a blue sleeve is pointing towards the crown. At the top, there is the level number, star count, and a timer. At the bottom, there are various icons and the text &quot;Challenge Yourself!&quot; on a red banner.">
+          <li data-aos="flip-left" class="reviews__item" role="listitem" aria-label="User review by SereneSolver">
+            <img class="reviews__icon" src="./examplesHtml/mygame.com/images/reviews/icon-4.png" alt=""
+              aria-label="This is an illustration of a 3D character with long black hair, wearing a black and blue hoodie, set against a light blue background.">
+            <h3 class="reviews__title" aria-label="SereneSolver content processed">SereneSolver</h3>
+            <p class="reviews__text" aria-label="Puzzle game description">
+              The best puzzle game for a quiet evening.
+            </p>
           </li>
         </ul>
+      </div>
+    </section>
 
-        <div class="gallery__button-container" role="group" aria-label="Gallery carousel button container">
-          <button class="button gallery__button--left" role="button" aria-label="Scroll gallery left">
-            <img src="./examplesHtml/mygame.com/images/arrow-left.png" alt="" aria-label="A blue leftward arrow emoji.">
-          </button>
-          <button class="button gallery__button--right" role="button" aria-label="Scroll gallery right">
-            <img src="./examplesHtml/mygame.com/images/arrow-right.png" alt="" aria-label="A 3D blue arrow pointing to the right.">
-          </button>
-        </div>
-      </section>
-    </main>
+    <section class="about" id="about" aria-label="About us section, Zen Match mindfulness gaming information">
+      <img class="about__image-1" src="./examplesHtml/mygame.com/images/about-1.png" alt=""
+        aria-label="A vibrant pile of various colorful objects, including a rubber duck, stars, balls, and other playful shapes, is visible. Some objects are partially obscured by a large white cloud-like shape in the foreground.">
 
-    <footer class="footer" role="contentinfo" aria-label="Site footer">
-      <div class="footer__container" role="group" aria-label="Footer container">
-        <div class="disclaimer__wrapper" role="region" aria-label="Disclaimer section">
-          <h3 class="disclaimer__title" aria-label="Disclaimer section">Disclaimer</h3>
-          <p class="disclaimer__text" aria-label="Platform information and age restriction notice">
-            mygame.com IS A PLATFORM FOR HAVING FUN. THE PROBABILITY OF WINNING
-            PLAYING THIS APP CANNOT BE CONSIDERED THE SAME AS WINNING IN REAL
-            LIFE GAMES. APP IS AVAILABLE TO ADULT AUDIENCES OVER 18 YEARS OF
-            AGE. ENJOY PLAYING THIS FREE APP!
+      <div class="about__wrapper container" role="group" aria-label="About section content">
+        <div class="about__wrapper--top" role="group" aria-label="About section top content">
+          <h2 class="about__title section--title" aria-label="About us section">About us</h2>
+          <p class="about__text" aria-label="Zen Match mindfulness game description">
+            Zen Match is not just a game, it's a movement towards mindfulness
+            through gaming. Each puzzle is designed not only to challenge but
+            also to impart a sense of peace and satisfaction through its
+            completion.
           </p>
-        </div>
-
-        <div class="footer__wrapper" role="group" aria-label="Footer links and copyright">
-          <!-- <img class="footer__image" src="./examplesHtml/mygame.com/imageshero.png" alt="" /> -->
-          <h1 class="home__title footer__title" aria-label="Zen Match game information">
-            <span class="text-stroke">Zen Match</span>
-            <span class="text-content">Zen Match</span>
-          </h1>
-          <a class="footer__text" href="policy.html" aria-label="Privacy policy">Privacy policy </a>
-          <a class="footer__text" href="terms.html" aria-label="Terms and Conditions">Terms and Conditions</a>
-          <p class="footer__copyright" aria-label="aria-label=&quot;All rights reserved mygame.com, mygame2025&quot;">
-            All rights reserved mygame.com | mygame2025
-          </p>
+          <a class="home__google-button_link about__button"
+            href="https://play.google.com/store/apps/details?id=com.zen.match3d" target="_blank" role="link"
+            aria-label="Download Zen Match on Google Play">
+            <img src="./examplesHtml/mygame.com/images/google-button.png" alt=""
+              aria-label="Google Play download button" role="img">
+          </a>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="js/mobile-menu.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <script src="js/slick.js"></script>
-  
+    <section class="gallery" id="gallery">
+      <ul data-aos="fade-down" class="gallery__list" role="list" aria-label="Gallery images list">
+        <li class="gallery__item" role="listitem" aria-label="Gallery item 1">
+          <img class="gallery__image" src="./examplesHtml/mygame.com/images/gallery/gallery-1.png" alt=""
+            aria-label="An illustrated game interface featuring rubber ducks wearing Santa hats, 
+                lifebuoys, brushes, and other items. The game is at level 09 with a timer showing 05:30. 
+                Players are likely tasked with matching or collecting specific items. At the bottom, there's 
+                a banner that says &quot;Match Items!&quot; in bold text.">
+        </li>
+        <li class="gallery__item" role="listitem" aria-label="Gallery item 2">
+          <img class="gallery__image" src="./examplesHtml/mygame.com/images/gallery/gallery-2.png" alt=""
+            aria-label="The image is a screenshot of a game interface featuring a search or 
+                puzzle-solving theme. It shows various pink objects, including a prominent pig 
+                figurine under a magnifying glass. At the top, there are game stats like level, 
+                stars, and a timer. The bottom displays icons for tools or hints. A colorful banner 
+                at the bottom reads &quot;Solve Puzzles!&quot;">
+        </li>
+        <li class="gallery__item" role="listitem" aria-label="Gallery item 3">
+          <img class="gallery__image" src="./examplesHtml/mygame.com/images/gallery/gallery-3.png" alt=""
+            aria-label="A split image showing a black and white room on the top and a colorful, 
+                decorated room on the bottom. There's a yellow arrow pointing downwards, suggesting 
+                transformation. The bottom half features a vibrant design with a yellow chair, plants,
+                and a bookshelf filled with items. The text at the bottom says &quot;Decorate Rooms!&quot;">
+        </li>
+        <li class="gallery__item" role="listitem" aria-label="Gallery item 4">
+          <img class="gallery__image" src="./examplesHtml/mygame.com/images/gallery/gallery-4.png" alt=""
+            aria-label="The image shows a colorful game interface featuring a hand interacting with 
+                a stack of red crowns surrounded by gold coins. At the top, it displays &quot;LEVEL 09,&quot; 
+                a star rating of 14, and a timer set at 05:30. Several game icons are visible at the bottom, 
+                indicating various options or tools. The text &quot;Challenge Yourself!&quot; is prominently 
+                displayed in orange on a red banner at the bottom.">
+        </li>
+      </ul>
+    
+      <div class="gallery__button-container" role="group" aria-label="Gallery navigation buttons">
+        <button class="button gallery__button--left" role="button" aria-label="Previous gallery image">
+          <img src="./examplesHtml/mygame.com/images/arrow-left.png" alt="" aria-label="Left arrow" role="img">
+        </button>
+        <button class="button gallery__button--right" role="button" aria-label="Next gallery image">
+          <img src="./examplesHtml/mygame.com/images/arrow-right.png" alt="" aria-label="Right arrow" role="img">
+        </button>
+      </div>
+    </section>
+  </main>
 
-</body></html>
+  <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <div class="footer__container" role="group" aria-label="Footer container">
+      <div class="disclaimer__wrapper" role="region" aria-label="Disclaimer section">
+        <h3 class="disclaimer__title" aria-label="Disclaimer section">Disclaimer</h3>
+        <p class="disclaimer__text" aria-label="Platform information and age restriction notice">
+          mygame.com IS A PLATFORM FOR HAVING FUN. THE PROBABILITY OF WINNING
+          PLAYING THIS APP CANNOT BE CONSIDERED THE SAME AS WINNING IN REAL
+          LIFE GAMES. APP IS AVAILABLE TO ADULT AUDIENCES OVER 18 YEARS OF
+          AGE. ENJOY PLAYING THIS FREE APP!
+        </p>
+      </div>
+
+      <div class="footer__wrapper" role="group" aria-label="Footer links and copyright">
+        <!-- <img class="footer__image" src="./examplesHtml/mygame.com/imageshero.png" alt="" /> -->
+        <h1 class="home__title footer__title" aria-label="Zen Match game information">
+          <span class="text-stroke">Zen Match</span>
+          <span class="text-content">Zen Match</span>
+        </h1>
+        <a class="footer__text" href="policy.html" aria-label="Privacy policy section">Privacy policy </a>
+        <a class="footer__text" href="terms.html" aria-label="Terms and Conditions">Terms and Conditions</a>
+        <p class="footer__copyright" aria-label="All rights reserved mygame.com, mygame2025">
+          All rights reserved mygame.com | mygame2025
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/mobile-menu.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/slick.js"></script>
+
+
+</body>
+
+</html>

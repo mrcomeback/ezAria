@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config(); 
 
 import fs from 'fs';
-import { addAriaAttributes, addAriaAttributesForAll } from './parser';
+import { addAriaAttributesForAll } from './parser';
 const inputPath: string = process.argv[2];
 const outputPath: string = "result/output.html";
 
@@ -13,7 +13,7 @@ if (!inputPath) {
 }
 
 (async () => {
-    const html = fs.readFileSync(inputPath, 'utf-8');
+    const html: string = fs.readFileSync(inputPath, 'utf-8');
     const result: string =  await addAriaAttributesForAll(html);
     fs.writeFileSync(outputPath, result);
     console.log(`✅ ARIA tags inserted → ${outputPath}`);
