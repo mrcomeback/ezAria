@@ -1,6 +1,6 @@
 {
   "name": "ezaria",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
   "exports": {
