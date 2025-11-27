@@ -15,8 +15,11 @@ Make sure `OPENAI_API_KEY` is available (via `.env` or your shell) before runnin
 ## CLI Usage
 
 ```bash
+# writes to ./ezaria-result/input.html
 npx ezaria ./examplesHtml/input.html
-# Output is written to result/output.html by default
+
+# override the output path explicitly
+npx ezaria ./examplesHtml/input.html ./result/custom-output.html
 ```
 
 ## Programmatic Usage

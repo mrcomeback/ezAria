@@ -7,18 +7,25 @@ import { addAriaAttributesForAll } from './module';
 
 dotenv.config();
 
-const inputPath: string | undefined = process.argv[2];
-const outputPath = 'result/output.html';
+const inputPathArg: string | undefined = process.argv[2];
+const outputPathArg: string | undefined = process.argv[3];
 
-if (!inputPath) {
+if (!inputPathArg) {
   console.error('Error: ez-aria did not find the file <input.html>');
   process.exit(1);
 }
 
-console.log(`Processing file: ${inputPath}`);
+const absoluteInputPath = path.resolve(inputPathArg);
+const defaultOutputPath = path.resolve(
+  'ezaria-result',
+  `${path.parse(absoluteInputPath).name}.html`
+);
+const outputPath = outputPathArg ? path.resolve(outputPathArg) : defaultOutputPath;
+
+console.log(`Processing file: ${absoluteInputPath}`);
 
 (async () => {
-  const html = fs.readFileSync(inputPath, 'utf-8');
+  const html = fs.readFileSync(absoluteInputPath, 'utf-8');
   const result = await addAriaAttributesForAll(html);
 
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
